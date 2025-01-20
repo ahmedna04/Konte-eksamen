@@ -10,15 +10,15 @@
 </head>
 <body>
     <div class="navigasjon-top">
+        <img src="bilder/fav.png" alt="Resiebyrå logo" class="logo">
         <a href="order.html" class="icon"><i class="fa-solid fa-magnifying-glass"></i></a>
         <a href="#" class="link">Opprett en konto</a>
         <a href="#" class="link"><i class="fa fa-user"></i> Min side</a>
         </div>
 
     <nav class="main-nav">
-        <img src="bilder/fav.png" alt="Resiebyrå logo" class="logo">
         <ul>
-            <li><a href="#">Tips og inspirasjon</a></li>
+            <li><a href="#tips-inspirasjon">Tips og inspirasjon</a></li>
             <li><a href="hotell.html">Hotell</a></li>
             <li><a href="https://www.norwegian.no" target="_blank">Fly</a></li>
             <li><a href="#footer">Kontakt</a></li>
@@ -26,6 +26,7 @@
     </nav> 
         <nav>
             <ul class="navliste">
+                <img src="bilder/sea-4768869_1920.jpg" alt="Hav4">
                 <li><a href="#"><i class="fa-solid fa-suitcase"></i> Fly + Hotell</a></li>
                 <li><a href="#"><i class="fa-solid fa-plane"></i> Fly</a></li>
                 <li><a href="#"><i class="fa-solid fa-city"></i> Storby</a></li>
@@ -34,7 +35,7 @@
             </ul>
         </nav>
     <main>
-        <section>
+        <section class="Reise">
             <h1>Reise</h1>
             <form action="#">
                 <label for="destination">Fra</label>
@@ -58,14 +59,15 @@
             
         </section>
 
-        <section class="kampanje-bilde">
+        <article class="kampanje-bilde">
             <img src="bilder/holiday-2733322_1280.jpg" alt="Sommerferie tilbud">
             <h1>Bestill sommerens beste uke</h1>
             <p>Fly + hotell, 7 dager</p>
             <p class="pris">Fra 3 298,-</p>
-            <button class="bestill">Bestill i dag</button>
-        </section>
-        <section class="ekstra-tilbud">
+            <button>Bestill i dag</button>
+        </article>
+
+        <article class="ekstra-tilbud">
             <h2>Få ekslusive tilbud</h2>
             <p>Logg inn/opprett konto for å få rabattkoder</p>
 
@@ -74,10 +76,11 @@
 
             <h2>Mars - spar opptill 5000,-</h2>
             <p>Sikre deg et ferie kupp</p>
-        </section>
+        </article>
 
-        <section class="tips-inspirasjon">
+        <article id="tips-inspirasjon">
             <h2>Tips & inspirasjon</h2>
+            <nav>
             <ul class="kort-liste">
                 <li>
                     <span class="merkelapp">Ukens Deal</span>
@@ -126,13 +129,13 @@
                     <i class="fa-solid fa-arrow-right"></i>
                 </li>
             </ul>
-
-        </section>
+            </nav>
+        </article>
 
 
     </main>
-    <footer>
-        <section class="land">
+    <footer id="footer">
+        <aside class="land">
             <h3>Land</h3>
             <p>Sverige</p>
             <img src="flags/sweden.png" alt="Sverige">
@@ -144,7 +147,7 @@
             <img src="flags/material.png" alt="Suomi">
             <p>Nederland</p>
             <img src="flags/netherlands.png" alt="Nederland">
-        </section>
+        </aside>
 
         <section class="betaling-metoder">
             <h3>Betalingsmetoder</h3>
@@ -162,25 +165,30 @@
             <input type="email" id="newsletter" name="newsletter" placeholder="ola@example.com...">
             <button type="submit">Send</button>
             <p>Kjøp reisegavekort</p>
-            </section>
+        </section>
+            
 
         <section class="kunde-service">
             <h3>Kundeservice</h3>
+            <nav>
             <ul>
                 <li><a href="#">Spørsmål og Svar</a></li>
                 <li><a href="#">Chat</a></li>
                 <li><a href="#">Kontakt</a></li>
                 <li><a href="#">Tilgjengelighetserklæring</a></li>
             </ul>
+        </nav>
         </section>
 
         <section class="sosiale-medier">
+            <nav>
             <h3>Sosiale medier</h3>
             <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
             <a href="https://www.pinterest.com"><i class="fa-brands fa-pinterest"></i></a>
             <a href="https://www.tiktok.com"><i class="fa-brands fa-tiktok"></i></a>
             <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+        </nav>
         </section>
     </footer>
 </body>
