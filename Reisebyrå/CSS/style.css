@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  background-color: #f6f5f2;
+  color: #252525;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+header {
+  background-color: #222;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.navigasjon-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigasjon-top .logo {
+  height: 50px;
+}
+
+.navigasjon-top a {
+  color: white;
+  font-size: 0.9rem;
+  margin-left: 1rem;
+}
+
+.main-nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5rem 0;
+}
+
+.main-nav ul li {
+  padding: 0.5rem 1rem;
+}
+
+.main-nav ul li a {
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+
+header {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 1rem;
+}
+
+.navliste {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: white;
+}
+
+.navliste li a {
+  font-size: 0.9rem;
+  color: #252525;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+}
+
+
+.Reise {
+  padding: 2rem;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin: -50px auto 2rem;
+  max-width: 90%;
+  border-radius: 10px;
+}
+
+.Reise form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.Reise form label {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #1ca2c1;
+}
+
+.Reise form input,
+.Reise form button {
+  padding: 0.7rem;
+  font-size: 1rem;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+}
+
+.Reise form button {
+  background-color: #ffcf40;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+
+.kampanje-bilde,
+.ekstra-tilbud,
+#tips-inspirasjon {
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.kampanje-bilde img,
+#tips-inspirasjon img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.kampanje-bilde h1 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: #027792;
+}
+
+
+
+footer {
+  background-color: #252525;
+  color: white;
+  padding: 2rem;
+}
+
+footer h3 {
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
+
+footer .land img {
+  width: 30px;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+footer .land {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+footer .betaling-metoder i {
+  font-size: 2rem;
+  margin-right: 0.5rem;
+}
+
+footer .sosiale-medier a {
+  color: white;
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+}

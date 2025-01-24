@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <header>
     <div class="navigasjon-top">
         <img src="bilder/fav.png" alt="Resiebyrå logo" class="logo">
         <a href="order.html" class="icon"><i class="fa-solid fa-magnifying-glass"></i></a>
@@ -23,7 +24,94 @@
             <li><a href="https://www.norwegian.no" target="_blank">Fly</a></li>
             <li><a href="#footer">Kontakt</a></li>
         </ul>
-    </nav> 
+    </nav>
+</header>
+    
+    <main>
+        <section class="bestilling">
+            <h1>Oppgi dine bestillingsopplysninger</h1>
+
+            <div class="bestillings-container">
+                <!-- Skjema for bestillingsdetaljer -->
+                <form action="#" class="bestillingsskjema">
+                    <fieldset>
+                        <legend>Voksen 18+ Hovedbestiller</legend>
+                        <div class="form-group">
+                            <label for="fornavn">Fornavn (i følge pass):</label>
+                            <input type="text" id="fornavn" name="fornavn" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="etternavn">Etternavn (i følge pass):</label>
+                            <input type="text" id="etternavn" name="etternavn" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="fødselsdato">Fødselsdato:</label>
+                            <input type="date" id="fødselsdato" name="fødselsdato" required>
+                        </div>
+                        <div class="form-group">
+                            <span>Kjønn:</span>
+                            <input type="radio" id="kvinne" name="kjønn" value="kvinne" required>
+                            <label for="kvinne">Kvinne</label>
+                            <input type="radio" id="mann" name="kjønn" value="mann" required>
+                            <label for="mann">Mann</label>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-postadresse:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefonnummer">Telefonnummer:</label>
+                            <input type="tel" id="telefonnummer" name="telefonnummer" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="gateadresse">Gateadresse:</label>
+                            <input type="text" id="gateadresse" name="gateadresse" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="postnummer">Postnummer:</label>
+                            <input type="text" id="postnummer" name="postnummer" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="poststed">Poststed:</label>
+                            <input type="text" id="poststed" name="poststed" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="land">Land:</label>
+                            <select id="land" name="land" required>
+                                <option value="">Velg et land</option>
+                                <option value="norge">Norge</option>
+                                <option value="sverige">Sverige</option>
+                                <option value="danmark">Danmark</option>
+                            </select>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Voksen 18+</legend>
+                        <!-- Legg til flere felter her ved behov -->
+                    </fieldset>
+
+                    <button type="submit">Siste trinn →</button>
+                </form>
+
+                <!-- Informasjon om reise -->
+                <aside class="reise-info">
+                    <img src="bilder/parga-beach.jpg" alt="Parga Beach">
+                    <h2>Parga Beach</h2>
+                    <ul>
+                        <li><i class="fa fa-map-marker-alt"></i> Hellas, Parga</li>
+                        <li><i class="fa fa-calendar"></i> Man 5 mai - Man 12 mai 2025</li>
+                        <li><i class="fa fa-user"></i> 2 Voksne</li>
+                        <li><i class="fa fa-bed"></i> Deluxe rom, Balkong</li>
+                        <li><i class="fa fa-utensils"></i> Frokostbuffé</li>
+                        <li><i class="fa fa-plane"></i> Oslo Lufthavn → Preveza</li>
+                    </ul>
+                    <p>22 003,-</p>
+                </aside>
+            </div>
+        </section>
+    </main>
+
 
     <footer id="footer">
         <aside class="land">
