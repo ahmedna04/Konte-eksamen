@@ -88,13 +88,13 @@ header {
 
 .Reise input {
   padding: 10px;
-  border: 1px solid #000;
+  border: 1px solid #000000;
   border-radius: 4px;
 }
 
 .Reise button {
   background-color: #ffcc40; 
-  color: #000; 
+  color: #000000; 
   padding: 10px;
   border: none;
   border-radius: 4px;
@@ -105,7 +105,7 @@ header {
 .kampanje-bilde {
   position: relative;
   text-align: center;
-  color: #000; 
+  color: #000000; 
   margin: 20px 0;
 }
 
@@ -182,7 +182,7 @@ header {
 }
 
 #tips-inspirasjon h2 {
-  color: #000; 
+  color: #000000; 
 }
 
 .kort-liste {
@@ -207,7 +207,7 @@ header {
 }
 
 .kort-liste li h3 {
-  color: #000; 
+  color: #000000; 
 }
 
 .kort-liste li .pris {
