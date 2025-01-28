@@ -27,91 +27,100 @@
     </nav>
 </header>
     
-    <main>
-        <section class="bestilling">
-            <h1>Oppgi dine bestillingsopplysninger</h1>
-
-            <div class="bestillings-container">
-                <!-- Skjema for bestillingsdetaljer -->
-                <form action="#" class="bestillingsskjema">
-                    <fieldset>
-                        <legend>Voksen 18+ Hovedbestiller</legend>
-                        <div class="form-group">
-                            <label for="fornavn">Fornavn (i følge pass):</label>
-                            <input type="text" id="fornavn" name="fornavn" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="etternavn">Etternavn (i følge pass):</label>
-                            <input type="text" id="etternavn" name="etternavn" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="fødselsdato">Fødselsdato:</label>
-                            <input type="date" id="fødselsdato" name="fødselsdato" required>
-                        </div>
-                        <div class="form-group">
-                            <span>Kjønn:</span>
-                            <input type="radio" id="kvinne" name="kjønn" value="kvinne" required>
-                            <label for="kvinne">Kvinne</label>
-                            <input type="radio" id="mann" name="kjønn" value="mann" required>
-                            <label for="mann">Mann</label>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">E-postadresse:</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="telefonnummer">Telefonnummer:</label>
-                            <input type="tel" id="telefonnummer" name="telefonnummer" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="gateadresse">Gateadresse:</label>
-                            <input type="text" id="gateadresse" name="gateadresse" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="postnummer">Postnummer:</label>
-                            <input type="text" id="postnummer" name="postnummer" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="poststed">Poststed:</label>
-                            <input type="text" id="poststed" name="poststed" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="land">Land:</label>
-                            <select id="land" name="land" required>
-                                <option value="">Velg et land</option>
-                                <option value="norge">Norge</option>
-                                <option value="sverige">Sverige</option>
-                                <option value="danmark">Danmark</option>
-                            </select>
-                        </div>
-                    </fieldset>
-
-                    <fieldset>
-                        <legend>Voksen 18+</legend>
-                        <!-- Legg til flere felter her ved behov -->
-                    </fieldset>
-
-                    <button type="submit">Siste trinn →</button>
-                </form>
-
-                <!-- Informasjon om reise -->
-                <aside class="reise-info">
-                    <img src="bilder/parga-beach.jpg" alt="Parga Beach">
-                    <h2>Parga Beach</h2>
-                    <ul>
-                        <li><i class="fa fa-map-marker-alt"></i> Hellas, Parga</li>
-                        <li><i class="fa fa-calendar"></i> Man 5 mai - Man 12 mai 2025</li>
-                        <li><i class="fa fa-user"></i> 2 Voksne</li>
-                        <li><i class="fa fa-bed"></i> Deluxe rom, Balkong</li>
-                        <li><i class="fa fa-utensils"></i> Frokostbuffé</li>
-                        <li><i class="fa fa-plane"></i> Oslo Lufthavn → Preveza</li>
-                    </ul>
-                    <p>22 003,-</p>
-                </aside>
-            </div>
-        </section>
-    </main>
-
+<main>
+    <section aria-labelledby="order-details">
+      <h1 id="order-details">Oppgi dine bestillingsopplysninger</h1>
+  
+      <form action="#" method="post">
+       
+        <fieldset>
+          <legend>Voksen 18+ Hovedbestiller</legend>
+          
+          <label for="first-name-main">Fornavn (ifølge pass):</label>
+          <input type="text" id="first-name-main" name="first-name-main" required />
+  
+          <label for="last-name-main">Etternavn (ifølge pass):</label>
+          <input type="text" id="last-name-main" name="last-name-main" required />
+  
+          <label for="dob-main">Fødselsdato:</label>
+          <input type="date" id="dob-main" name="dob-main" required />
+  
+          <div>
+            <span>Kjønn:</span>
+            <label><input type="radio" name="gender-main" value="female" required /> Kvinne</label>
+            <label><input type="radio" name="gender-main" value="male" required /> Mann</label>
+          </div>
+  
+          <label for="email-main">E-postadresse:</label>
+          <input type="email" id="email-main" name="email-main" required />
+  
+          <label for="phone-main">Telefonnummer:</label>
+          <input type="tel" id="phone-main" name="phone-main" required />
+  
+          <label for="address-main">Gateadresse:</label>
+          <input type="text" id="address-main" name="address-main" required />
+  
+          <label for="zipcode-main">Postnummer:</label>
+          <input type="text" id="zipcode-main" name="zipcode-main" required />
+  
+          <label for="city-main">Poststed:</label>
+          <input type="text" id="city-main" name="city-main" required />
+  
+          <label for="country-main">Land:</label>
+          <select id="country-main" name="country-main" required>
+            <option value="">Velg et land</option>
+            <option value="norway">Norge</option>
+            <option value="sweden">Sverige</option>
+            <option value="denmark">Danmark</option>
+          </select>
+        </fieldset>
+  
+        
+        <fieldset>
+          <legend>Voksen 18+</legend>
+          
+          <label for="first-name-secondary">Fornavn (ifølge pass):</label>
+          <input type="text" id="first-name-secondary" name="first-name-secondary" required />
+  
+          <label for="last-name-secondary">Etternavn (ifølge pass):</label>
+          <input type="text" id="last-name-secondary" name="last-name-secondary" required />
+  
+          <label for="dob-secondary">Fødselsdato:</label>
+          <input type="date" id="dob-secondary" name="dob-secondary" required />
+  
+          <div>
+            <span>Kjønn:</span>
+            <label><input type="radio" name="gender-secondary" value="female" required /> Kvinne</label>
+            <label><input type="radio" name="gender-secondary" value="male" required /> Mann</label>
+          </div>
+        </fieldset>
+  
+        <button type="submit">Siste trinn →</button>
+      </form>
+    </section>
+  
+    <aside>
+      <figure>
+        <img src="bilder/landscape-2016308_640.jpg" alt="Parga Beach" />
+        <figcaption>
+          <h2>Parga Beach</h2>
+          <nav>
+          <ul>
+            <li>Hellas, Parga</li>
+            <li>Man 5. mai - man 12. mai 2025</li>
+            <li>2 Voksne</li>
+            <li>Deluxerom, Balkong og ikke spesifisert utsikt</li>
+            <li>Frokostbuffé</li>
+            <li>Oslo Lufthavn — Preveza</li>
+            <li>22 003,-</li>
+            <li>19 803,-</li>
+          </ul>
+          </nav>
+        </figcaption>
+      </figure>
+    </aside>
+  </main>
+  
 
     <footer id="footer">
         <aside class="land">
