@@ -10,12 +10,12 @@
 </head>
 <body>
     <header>
-    <div class="navigasjon-top">
+    <nav class="navigasjon-top">
         <img src="bilder/fav.png" alt="Resiebyrå logo" class="logo">
         <a href="order.html" class="icon"><i class="fa-solid fa-magnifying-glass"></i></a>
         <a href="#" class="link">Opprett en konto</a>
         <a href="#" class="link"><i class="fa fa-user"></i> Min side</a>
-        </div>
+    </nav>
 
     <nav class="main-nav">
         <ul>
@@ -34,77 +34,58 @@
     <section class="bestillings-opplysninger">
       <h1 id="order-details">Oppgi dine bestillingsopplysninger</h1>
   
-      <form action="#" method="post">
-       
+      <form action="#" method="post">       
         <fieldset>
           <legend>Voksen 18+ Hovedbestiller</legend>
           <label for="Fornavn">Fornavn (ifølge pass):</label>
-          <input type="text" id="Fornavn" name="Fornavn" required/>
+          <input type="text" id="Fornavn" name="Fornavn" required>
   
           <label for="Etternavn">Etternavn (ifølge pass):</label>
-          <input type="text" id="Etternavn" name="Etternavn" required/>
+          <input type="text" id="Etternavn" name="Etternavn" required>
   
           <label for="Fødselsdato">Fødselsdato:</label>
-          <input type="date" id="dob-main" name="Fødselsdato" required/>
+          <input type="date" id="Fødselsdato" name="Fødselsdato" required>
   
           
             <span>Kjønn:</span>
-            <label><input type="radio" name="Kjønn" value="Kvinne" required/> Kvinne</label>
-            <label><input type="radio" name="Kjønn" value="Mann" required/> Mann</label>
+            <label><input type="radio" name="Kjønn" value="Kvinne" required> Kvinne</label>
+            <label><input type="radio" name="Kjønn" value="Mann" required> Mann</label>
           
   
           <label for="E-post">E-postadresse:</label>
-          <input type="email" id="E-post" name="E-post" required/>
+          <input type="email" id="E-post" name="E-post" required>
   
           <label for="Mobil">Telefonnummer:</label>
-          <input type="tel" id="Mobil" name="Mobil" required/>
+          <input type="tel" id="Mobil" name="Mobil" required>
   
           <label for="Address">Gateadresse:</label>
-          <input type="text" id="Address" name="Address" required/>
+          <input type="text" id="Address" name="Address" required>
   
           <label for="postnummer">Postnummer:</label>
-          <input type="text" id="postnummer" name="postnummer" required/>
+          <input type="text" id="postnummer" name="postnummer" required>
   
           <label for="Poststed">Poststed:</label>
-          <input type="text" id="Poststed" name="Poststed" required/>
-  
+          <input type="text" id="Poststed" name="Poststed" required>
+
+          
           <label for="Land">Land:</label>
-          <select id="land" name="land" required>
+          <select id="Land" name="land" required>
             <option value="">Velg et land</option>
             <option value="norway">Norge</option>
             <option value="sweden">Sverige</option>
             <option value="denmark">Danmark</option>
+            
           </select>
         </fieldset>
-  
-        
-        <fieldset>
-          <legend>Voksen 18+</legend>
-          
-          <label for="Etternavn">Fornavn (ifølge pass):</label>
-          <input type="text" id="Etternavn" name="Etternavn" required/>
-  
-          <label for="Etternavn">Etternavn (ifølge pass):</label>
-          <input type="text" id="Etternavn" name="Etternavn" required/>
-  
-          <label for="Fødselsdato">Fødselsdato:</label>
-          <input type="date" id="Fødselsdato" name="Fødselsdato" required/>
-  
-          
-            <span>Kjønn:</span>
-            <label><input type="radio" name="gender-secondary" value="female" required/> Kvinne</label>
-            <label><input type="radio" name="gender-secondary" value="male" required/> Mann</label>
-          
-        </fieldset>
-  
-        <button class="Siste"
-        type="submit">Siste trinn →</button>
-      </form>
+    </form>
     </section>
+</main>
+        <button class="Siste"
+        type="submit">Siste trinn</button>
   
     <aside>
       <figure>
-        <img src="bilder/landscape-2016308_640.jpg" alt="Parga Beach"/>
+        <img src="bilder/landscape-2016308_640.jpg" alt="Parga Beach">
         <figcaption>
           <h2>Parga Beach</h2>
           <nav>
@@ -122,7 +103,7 @@
         </figcaption>
       </figure>
     </aside>
-  </main>
+
   
 
     <footer id="footer">
@@ -180,5 +161,4 @@
             <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
         </section>
     </footer>
-</body>
 </html>
